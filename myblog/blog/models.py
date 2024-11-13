@@ -31,4 +31,4 @@ class Comments(models.Model):
 
 class Likes(models.Model):
     ip = models.CharField('IP-address', max_length=100)
-    pos_id = models.ForeignKey(Post, verbose_name='Posts', on_delete=models.CASCADE)
+    pos = models.ForeignKey(Post, verbose_name='Posts', on_delete=models.CASCADE)
